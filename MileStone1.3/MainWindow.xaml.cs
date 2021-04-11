@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Tester;
+using System.Xml;
 
 namespace MileStone1._3
 {
@@ -22,6 +24,7 @@ namespace MileStone1._3
     {
         public MainWindow()
         {
+            Tester.Test1.MyTest();
             InitializeComponent();
         }
     }
