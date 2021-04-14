@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FlightSimulator
+namespace MileStone1._3
 {
     /// <summary>
     /// Interaction logic for JoyStick_view.xaml
