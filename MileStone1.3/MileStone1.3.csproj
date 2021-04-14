@@ -35,8 +35,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot, Version=2.0.0.0, Culture=neutral, PublicKeyToken=638079a8f0bd61e9, processorArchitecture=MSIL">
+      <HintPath>..\packages\OxyPlot.Core.2.0.0\lib\net45\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.OpenXml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OxyPlot.OpenXml.2.0.0\lib\net452\OxyPlot.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.Wpf, Version=2.0.0.0, Culture=neutral, PublicKeyToken=75e952ba404cdbb0, processorArchitecture=MSIL">
+      <HintPath>..\packages\OxyPlot.Wpf.2.0.0\lib\net45\OxyPlot.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ReachFramework" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Printing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,10 +70,57 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AnomalyDetector.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="CVSParser.cs" />
+    <Compile Include="DataCalculations.cs" />
+    <Compile Include="DataInfo.cs" />
+    <Compile Include="DataViewer.xaml.cs">
+      <DependentUpon>DataViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FGClient.cs" />
+    <Compile Include="FileLoader.xaml.cs">
+      <DependentUpon>FileLoader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FlightController.cs" />
     <Compile Include="FileHandler.cs" />
+    <Compile Include="FileLoader_VM.cs" />
+    <Compile Include="FlightControllerEventArgs.cs" />
+    <Compile Include="FlightDataParser.cs" />
+    <Compile Include="JoystickController.cs" />
+    <Compile Include="Joystick_view.xaml.cs">
+      <DependentUpon>Joystick_view.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Joystick_VM.cs" />
+    <Compile Include="lineChart_model.cs" />
+    <Compile Include="lineChart_view.xaml.cs">
+      <DependentUpon>lineChart_view.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lineChart_VM.cs" />
+    <Compile Include="MainWindow_VM.cs" />
+    <Compile Include="MediaController.cs" />
+    <Compile Include="MediaController_VM.cs" />
+    <Compile Include="MediaPlayer.xaml.cs" />
     <Compile Include="MyClient.cs" />
     <Compile Include="MyServer.cs" />
+    <Compile Include="passData_VM.cs" />
     <Compile Include="Test1.cs" />
+    <Page Include="DataViewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FileLoader.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Joystick_view.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lineChart_view.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -90,6 +152,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

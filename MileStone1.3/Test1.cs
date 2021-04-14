@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MileStone1._3;
-//using MyServer;
 using Handler;
 using System.Xml;
 
@@ -18,11 +17,11 @@ namespace Tester
             Console.WriteLine("Hello World!");
             Console.WriteLine("Hello World!");
             Console.WriteLine("Hello World!");
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("cgtHello World!");
             //InitializeComponent();
             //flightController = FlightController.GetInstance;
             FileHandler fh = new FileHandler();
-            MyClient mc = new MyClient();
+            FGClient mc = new FGClient();
             String s1 = "127.0.0.1";
             mc.Connect(s1 ,5400);
             //passData_VM passdata = new passData_VM();

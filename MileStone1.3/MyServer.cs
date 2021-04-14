@@ -45,7 +45,7 @@ namespace MileStone1._3
                 while (true)
                 {
 
-                    Console.WriteLine("Waiting connection ... ");
+                    Console.WriteLine("Waiting for connection ... ");
 
                     // Suspend while waiting for
                     // incoming connection Using 
