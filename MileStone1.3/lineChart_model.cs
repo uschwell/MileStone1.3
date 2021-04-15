@@ -9,7 +9,7 @@ namespace MileStone1._3
     class LineChart_model : INotifyPropertyChanged
     {
         FlightController fc;
-        mediaController mc;
+        MediaController mc;
         string[] _names;
         Dictionary<string, LinkedList<DataPoint>> datalists;
         public event PropertyChangedEventHandler PropertyChanged;
@@ -22,7 +22,7 @@ namespace MileStone1._3
         {
             secondsTocalc = 30;
             fc = FlightController.GetInstance;
-            mc = mediaController.GetInstance;
+            mc = MediaController.GetInstance;
             fc.PropertyChanged += UpdateMedia;
             //    Names = fc.Names;
 

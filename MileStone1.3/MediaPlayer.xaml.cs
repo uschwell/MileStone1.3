@@ -19,13 +19,13 @@ namespace MileStone1._3
     /// </summary>
     public partial class MediaPlayer : UserControl
     {
-        mediaController_VM vm;
+        MediaController_VM vm;
         double oldval;
 
         public MediaPlayer()
         {
-            InitializeComponent();
-            vm = new mediaController_VM();
+            //InitializeComponent();
+            vm = new MediaController_VM();
             this.DataContext = vm;
 
         }

@@ -8,7 +8,7 @@ using System.ComponentModel;
 
 namespace MileStone1._3
 {
-    //Should have al
+    //Should have al added in
     class FlightController : INotifyPropertyChanged
     {
         MyClient fg_client;

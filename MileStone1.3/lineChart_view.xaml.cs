@@ -20,8 +20,8 @@ namespace MileStone1._3
             vm = new LineChart_VM();
             DataContext = vm;
             vm.PropertyChanged += Update;
-            //  PlotModel pm = new PlotModel();
-            //pm.Axes.Add(plot.Series);
+            PlotModel pm = new PlotModel();
+            pm.Axes.Add(plot.Series);
 
             plot.Axes.Add(new OxyPlot.Wpf.LinearAxis
             {

@@ -6,12 +6,13 @@ using System.Linq;
 
 namespace MileStone1._3
 {
-    class FlightDataParser : CSVParser //get lines from a csv file parse them as flight data.
+    //get lines from a csv file parse them as flight data.
+    class FlightDataParser : CSVParser 
     {
         string csv_file;
         string[] lines;
         Dictionary<int, string> data_headers;
-        Dictionary<string, string[]> dataByName; //////////////////////////////////////////////////
+        Dictionary<string, string[]> dataByName;
 
         private string[] Names { get; set; }
 

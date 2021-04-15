@@ -70,14 +70,16 @@ namespace MileStone1._3
                 fileHandler = new FileHandler();
 
                 passData_VM passdata = new passData_VM();
+                DataViewer data_viewer = new DataViewer();
                 data_viewer.SetVM(passdata);
+                JoyStick_view joystick = new JoyStick_view();
                 joystick.SetVM(passdata);
             }
 
             private void Window_Loaded(object sender, RoutedEventArgs e)
             {
                 this.IsEnabled = false;
-                FileLoader fLoader = new FileLoader(fileHandler);
+                FileLoader fLoader = new FileLoader(FileHandler);
                 Nullable<bool> res = fLoader.ShowDialog();
                 if (res == true)
                 {
