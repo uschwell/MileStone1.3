@@ -63,7 +63,7 @@ namespace Handler
 
             set
             {
-                //      if (!value.Equals(""))
+                //if (!value.Equals(""))
                 this.csvpath = value;
                 NotifyPropertyChanged("csvPath");
             }
@@ -82,7 +82,7 @@ namespace Handler
 
             set
             {
-                //      if (!value.Equals(""))
+                //if (!value.Equals(""))
                 this.anomalycsvPath = value;
                 NotifyPropertyChanged("anomalyCsvPath");
             }
